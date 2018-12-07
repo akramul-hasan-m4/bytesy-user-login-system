@@ -1,5 +1,5 @@
 ﻿# Bytesi user Login System
- <img src="images/login.png" alt="login" height="42" width="100%">
+ <img src="images/login.png" alt="login" height="30%" width="100%">
 
 ## instruction:
 	1. Download the project in your local machine and import it your favourite IDE as maven project.
