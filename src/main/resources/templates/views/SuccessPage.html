@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" th:href="@{/images/teamico.png}" href="/images/teamico.png" type="image/x-icon" />
+		<title th:text="#{login.success.title}"></title>
+		<!-- 3 meta for prevent back -->
+		<META Http-Equiv="Cache-Control" Content="no-cache">
+		<META Http-Equiv="Pragma" Content="no-cache">
+		<META Http-Equiv="Expires" Content="0">
+		<span th:insert="/commons/commonResources :: common-meta"></span>
+		<link rel="stylesheet" type="text/css" href="/css/bootstrap4.1.1.min.css" th:href="@{/css/bootstrap4.1.1.min.css}" />
+		<style type="text/css">
+			h1 {
+				text-align: center;
+				margin-top: 20%;
+				font-size: 30px;
+			}
+		</style>
+	</head>
+	<body>
+	<nav class="navbar navbar-light bg-light">
+		<img th:src="@{/images/bytesi.png}" style="height:60px" id="icon" alt="User Icon" />
+		<form class="form-inline" th:action="@{/logout}" method="post">
+			<input  type="submit" href="#" class="btn btn-link btn-logout btn-primary" value="Logout"></a>
+		</form>
+	</nav>
+	<h1 style="color: green">Dear <label th:text="${userName}" />, You are successfully logged in</h1>
+	<script language="JavaScript" type="text/javascript">
+		window.history.forward();
+ 	</script>
+	</body>
+</html>

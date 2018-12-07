@@ -1,0 +1,18 @@
+"2018-12-04 11:57:39 [restartedMain] INFO  c.b.l.s.b.BytesyUserLoginSystemApplication - Starting BytesyUserLoginSystemApplication on DOLPHIN with PID 8788 (G:\bootSpring\bytesy-user-login-system\target\classes started by DOLPHIN in G:\bootSpring\bytesy-user-login-system)
+"2018-12-04 11:57:39 [restartedMain] DEBUG c.b.l.s.b.BytesyUserLoginSystemApplication - Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+"2018-12-04 11:57:39 [restartedMain] INFO  c.b.l.s.b.BytesyUserLoginSystemApplication - No active profile set, falling back to default profiles: default
+"2018-12-04 11:57:39 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+"2018-12-04 11:57:39 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+"2018-12-04 11:57:40 [restartedMain] INFO  c.b.l.s.b.BytesyUserLoginSystemApplication - Started BytesyUserLoginSystemApplication in 0.468 seconds (JVM running for 2487.297)
+"2018-12-04 12:11:07 [restartedMain] INFO  c.b.l.s.b.BytesyUserLoginSystemApplication - Starting BytesyUserLoginSystemApplication on DOLPHIN with PID 8788 (G:\bootSpring\bytesy-user-login-system\target\classes started by DOLPHIN in G:\bootSpring\bytesy-user-login-system)
+"2018-12-04 12:11:07 [restartedMain] DEBUG c.b.l.s.b.BytesyUserLoginSystemApplication - Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+"2018-12-04 12:11:07 [restartedMain] INFO  c.b.l.s.b.BytesyUserLoginSystemApplication - No active profile set, falling back to default profiles: default
+"2018-12-04 12:11:07 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+"2018-12-04 12:11:07 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+"2018-12-04 12:11:07 [restartedMain] INFO  c.b.l.s.b.BytesyUserLoginSystemApplication - Started BytesyUserLoginSystemApplication in 0.47 seconds (JVM running for 3294.942)
+"2018-12-04 12:11:56 [restartedMain] INFO  c.b.l.s.b.BytesyUserLoginSystemApplication - Starting BytesyUserLoginSystemApplication on DOLPHIN with PID 8788 (G:\bootSpring\bytesy-user-login-system\target\classes started by DOLPHIN in G:\bootSpring\bytesy-user-login-system)
+"2018-12-04 12:11:56 [restartedMain] DEBUG c.b.l.s.b.BytesyUserLoginSystemApplication - Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+"2018-12-04 12:11:56 [restartedMain] INFO  c.b.l.s.b.BytesyUserLoginSystemApplication - No active profile set, falling back to default profiles: default
+"2018-12-04 12:11:57 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+"2018-12-04 12:11:57 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+"2018-12-04 12:11:57 [restartedMain] INFO  c.b.l.s.b.BytesyUserLoginSystemApplication - Started BytesyUserLoginSystemApplication in 0.505 seconds (JVM running for 3344.715)

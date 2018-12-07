@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" th:href="@{/images/teamico.png}" href="/images/teamico.png" type="image/x-icon" />
+		<title th:text="#{login.title}"></title>
+		<span th:insert="/commons/commonResources :: common-meta"></span>
+		<span th:insert="/commons/commonResources :: common-css"></span>
+		<link rel="stylesheet" type="text/css" href="/css/login.css" th:href="@{/css/login.css}" />
+	</head>
+	<body>
+		<div class="wrapper fadeInDown">
+			<div id="formContent">
+				<div class="fadeIn first">
+					<img th:src="@{/images/bytesi.png}" id="icon" alt="User Icon" />
+					<h1 th:text="#{login.title}"></h1>
+					<div class="alert alert-danger" th:if="${loginFailed}">
+						<strong th:text=${loginFailed}>!</strong> Forget password? <a th:href="@{/forgetPassword}">Click here</a>
+					</div>
+				</div>
+				<!-- Login Form -->
+				<form th:action="@{/login}" th:object="${user}" method="post">
+					<input type="text" id="login" class="fadeIn second" th:field="*{userName}" name="userName" th:placeholder="#{login.placeholder.username}"/> 
+					<input type="text" id="password" class="fadeIn third" th:field="*{password}" name="password" th:placeholder="#{login.placeholder.Password}"/> 
+					<input type="submit" class="fadeIn fourth" th:value="#{login.btn.label}">
+				</form>
+				<div id="formFooter">
+					<span th:text="#{login.needAccount}"></span>
+					<a class="underlineHover" th:href="@{/signup}"><span th:text="#{login.signup}"></span></a>
+				</div>
+			</div>
+		</div>
+		<span th:insert="/commons/commonResources :: common-js"></span>
+	</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" th:href="@{/images/teamico.png}" type="image/x-icon" />
+		<title th:text="#{signup.title}"></title>
+		<span th:insert="/commons/commonResources :: common-meta"></span> 
+		<link rel="stylesheet" type="text/css" href="/css/bootstrap4.1.1.min.css" th:href="@{/css/bootstrap4.1.1.min.css}" />
+		<link rel="stylesheet" type="text/css" href="/css/signup.css" th:href="@{/css/signup.css}" />
+		<link rel="stylesheet" type="text/css" href="/css/alertify.core.css" th:href="@{/css/alertify.core.css}"/>
+		<link rel="stylesheet" type="text/css" href="/css/alertify.default.css" th:href="@{/css/alertify.default.css}"/>
+	</head>
+	<body>
+		<div class="container register">
+			<div class="row">
+				<div class="col-md-3 register-left">
+					<img th:src="@{/images/logo_white.png}" alt=""/>
+					<h3 th:text="#{signup.title}"></h3>
+					<p th:text="#{signup.welcome.msg}"></p>
+					<button> <a class="underlineHover" th:href="@{/}"><span th:text="#{login.btn.label}"></span></a> </button><br/>
+				</div>
+				<div class="col-md-9 register-right">
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+							<h3 class="register-heading" th:text="#{signup.apply.user.label}"></h3>
+							<form class="row register-form" id="userForm" role="form" autocomplete="off" th:action="@{/userReg}" method="post">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control" id="firstName" name="firstName" th:placeholder="#{signup.placeholder.firstname}" value="" />
+										<span class='msg firstNamemsg' th:text="#{user.invalid.msg.firstname}" style="display: none"></span>
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" id="userName" name="userName" th:placeholder="#{signup.placeholder.userName}" value="" />
+										<span class='msg userNamemsg' th:text="#{user.invalid.msg.username}" style="display: none"></span>
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" id="currentAddress" name="currentAddress" th:placeholder="#{signup.placeholder.currentAddress}" value="" />
+										<span class='msg currentAddressmsg' th:text="#{user.invalid.msg.currentAddress}" style="display: none"></span>
+									</div>
+									<div class="form-group">
+										<input type="password" class="form-control" id="password" name="password"  th:placeholder="#{signup.placeholder.password}" value="" />
+										<span id="pwd_strength" class='msg'></span>
+									</div>
+									<div class="form-group">
+										<input type="password" id="confirm_password"class="form-control" th:placeholder="#{signup.placeholder.confirmPassword}" value="" />
+										<span id='message' runat="server" ></span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text"  id="lastName" class="form-control" name="lastName" th:placeholder="#{signup.placeholder.lastname}" value="" />
+										<span class='msg lastNamemsg' th:text="#{user.invalid.msg.lastname}" style="display: none"></span>
+									</div>
+									<div class="form-group">
+										<input type="email" class="form-control" id="email" name="email"  th:placeholder="#{signup.placeholder.email}" value="" />
+										<span class='msg emailemsg' th:text="#{user.invalid.msg.email}" style="display: none"></span>
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" id="permanentAddress" name="permanentAddress" th:placeholder="#{signup.placeholder.permanentAddress}" value="" />
+									</div>
+									<div class="form-group">
+										<select class="form-control" id="securityQuestion">
+											<option class="hidden"  selected disabled><span th:text="#{signup.placeholder.securityQus}"></span></option>
+											<option th:value="#{signup.option.securityQus1}"><span th:text="#{signup.option.securityQus1}"></span></option>
+											<option th:value="#{signup.option.securityQus2}"><span th:text="#{signup.option.securityQus2}"></span></option>
+											<option th:value="#{signup.option.securityQus3}"><span th:text="#{signup.option.securityQus3}"></span></option>
+											<option th:value="#{signup.option.securityQus4}"><span th:text="#{signup.option.securityQus4}"></span></option>
+											<option th:value="#{signup.option.securityQus5}"><span th:text="#{signup.option.securityQus5}"></span></option>
+											<option th:value="#{signup.option.securityQus6}"><span th:text="#{signup.option.securityQus6}"></span></option>
+											<span class='msg securityQuestionmsg' th:text="#{user.invalid.msg.securityQues}" style="display: none"></span>
+										</select>
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" id="securityAns" name="securityAns" th:placeholder="#{signup.placeholder.securityAns}" value="" />
+										<span class='msg securityAnsnmsg' th:text="#{user.invalid.msg.securityAns}" style="display: none"></span>
+									</div>
+								</div>
+							</form>
+							</div>
+							<div>
+								<input type="submit" class="btnRegister"  th:value="#{signup.btn.register.label}"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<span th:insert="/commons/commonResources :: common-js"></span>
+		<script src="/js/alertify.min.js" th:src="@{/js/alertify.min.js}" type="text/javascript"></script>
+		<script src="/customJS/userReg.js" th:src="@{/customJS/userReg.js}"></script>
+	</body>
+</html>
